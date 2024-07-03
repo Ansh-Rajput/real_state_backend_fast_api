@@ -4,11 +4,12 @@
       "src": "main.py",
       "use": "@vercel/python",
       "config": {
-        "buildCommand": "prisma generate && sh build.sh"
-      }
+        "buildCommand": "prisma generate"
+      },
+      "buildCommand": "prisma generate"
     }
   ],
-  "buildCommand": "prisma generate && sh build.sh",
+  "buildCommand": "prisma generate",
   "installCommand": "pip install -r requirements.txt && prisma generate",
   "routes": [
     {
