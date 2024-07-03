@@ -4,9 +4,8 @@
       "src": "main.py",
       "use": "@vercel/python",
       "config": {
-        "buildCommand": "prisma generate"
-      },
-      "buildCommand": "prisma generate"
+        "buildCommand": "vercel.sh && prisma generate"
+      }
     }
   ],
   "buildCommand": "prisma generate",
