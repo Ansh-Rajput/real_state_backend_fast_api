@@ -5,9 +5,11 @@
       "use": "@vercel/python",
       "config": {
         "buildCommand": "vercel.sh && prisma generate"
-      }
+      },
+      "installCommand": "pip install -r requirements.txt && prisma generate"
     }
   ],
+
   "routes": [
     {
       "src": "/(.*)",
