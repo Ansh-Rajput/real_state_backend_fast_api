@@ -8,7 +8,7 @@
       }
     }
   ],
-
+  "buildCommand": "prisma generate && sh build.sh",
   "installCommand": "pip install -r requirements.txt && prisma generate",
   "routes": [
     {
