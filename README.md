@@ -68,22 +68,26 @@ This is a web application for managing real estate properties, built using FastA
 1. BASE_URL/add_new_property:
    ```sh
    {
-       locality:"locality"
+       "property_name":property_name,
+       "locality":locality,
+       "owner_name":owner_name
    }
 2. BASE_URL/fetch_all_properties:
    ```sh
    {
-       locality_name:"locality"
+       "locality_name":locality
    }
 3. BASE_URL/update_property_details:
    ```sh
    {
-       property:"property"
+       "property_id":property_id,
+       "locality_id":locality_id,
+       "owner_name":owner_name
    }
 4. BASE_URL/delete_property_record:
    ```sh
    {
-       id:"property_id"
+       "property_id":property_id
    }
 
    
